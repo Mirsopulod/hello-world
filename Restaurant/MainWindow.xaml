@@ -25,7 +25,15 @@
                 <Label Grid.Row="0" Grid.Column="1">Quantity</Label>
                 <TextBox Grid.Row="1" Grid.Column="1" Name="TxtQuantity"></TextBox>
                 
-                <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Click="Submit">Submit</Button>
+                <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Click="Submit">
+                        <Button.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#00FFFF " Offset="0"/>
+                                        <GradientStop Color="#FF00FF " Offset="1"/>
+                                </LinearGradientBrush>
+                        </Button.Background>
+                        Submit
+                </Button>
                 
                 <ListBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Height="100" Name="LbLog"></ListBox>
         </Grid>
