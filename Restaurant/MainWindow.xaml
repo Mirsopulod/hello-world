@@ -19,6 +19,7 @@
                          <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 
+                <RadioButton Grid.Row="0" Grid.Column="0" Name="RbChicken">Chicken</RadioButton>
                 <RadioButton Grid.Row="1" Grid.Column="0" Name="RbEgg">Egg</RadioButton>
                 
                 <Label Grid.Row="0" Grid.Column="1">Quantity</Label>

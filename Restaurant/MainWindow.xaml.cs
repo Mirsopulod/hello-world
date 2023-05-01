@@ -33,12 +33,11 @@ namespace Restaurant
                 try
                 {
                     LbLog.Items.Add("Cooked Chicken " + Convert.ToInt32(TxtQuantity.Text));
-                    TxtQuantity.Clear();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("An error occurred: " + ex.Message);
-                    TxtQuantity.Clear();
+                    
                 }
             }
             else if (RbEgg.IsChecked == true && !string.IsNullOrEmpty(TxtQuantity.Text))
@@ -46,7 +45,6 @@ namespace Restaurant
                 try
                 {
                     LbLog.Items.Add("Cooked Egg " + Convert.ToInt32(TxtQuantity.Text));
-                    TxtQuantity.Clear();
                 }
                 catch (Exception ex)
                 {
@@ -61,6 +59,7 @@ namespace Restaurant
             {
                 MessageBox.Show("Write count of meal!");
             }
+            TxtQuantity.Clear();
     }
     }
 }
