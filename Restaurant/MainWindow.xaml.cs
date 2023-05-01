@@ -37,7 +37,6 @@ namespace Restaurant
                 catch (Exception ex)
                 {
                     MessageBox.Show("An error occurred: " + ex.Message);
-                    
                 }
             }
             else if (RbEgg.IsChecked == true && !string.IsNullOrEmpty(TxtQuantity.Text))
