@@ -28,49 +28,56 @@ namespace Restaurant{
         private void Submit(object sender, RoutedEventArgs e)
         {
             //button clicked
-            if (RbChicken.IsChecked == true && !string.IsNullOrEmpty(TxtQuantity.Text))
+            if (!string.IsNullOrEmpty(TxtQuantity.Text))
             {
-                try
+                if (RbChicken.IsChecked == true)
                 {
-                    List<Egg> eggs=new List<Egg>();
-                    for(int i =0;i<Convert.ToInt32(TxtQuantity.Text);i++){
-                        eggs.Add(new Egg());
-                    }
+                    try
+                    {
+                        List<Egg> eggs = new List<Egg>();
+                        for (int i = 0; i < Convert.ToInt32(TxtQuantity.Text); i++)
+                        {
+                            eggs.Add(new Egg());
+                        }
 
-                    foreach(Egg tre in eggs){
-                        tre.Cook();
-                    }
+                        foreach (Egg tre in eggs)
+                        {
+                            tre.Cook();
+                        }
 
-                    LbLog.Items.Add("coocked " + TxtQuantity.Text + " eggs");
+                        LbLog.Items.Add("coocked " + TxtQuantity.Text + " eggs");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred: " + ex.Message);
+                    }
                 }
-                catch (Exception ex)
+                else if (RbEgg.IsChecked == true)
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
-                }
-            }
-            else if (RbEgg.IsChecked == true && !string.IsNullOrEmpty(TxtQuantity.Text))
-            {
-                try
-                {
-                    List<Chicken> chickens=new List<Chicken>();
-                    for(int i =0;i<Convert.ToInt32(TxtQuantity.Text);i++){
-                        chickens.Add(new Chicken());
-                    }
+                    try
+                    {
+                        List<Chicken> chickens = new List<Chicken>();
+                        for (int i = 0; i < Convert.ToInt32(TxtQuantity.Text); i++)
+                        {
+                            chickens.Add(new Chicken());
+                        }
 
-                    foreach(Chicken tre in chickens){
-                        tre.Cook();
-                    }
+                        foreach (Chicken tre in chickens)
+                        {
+                            tre.Cook();
+                        }
 
-                    LbLog.Items.Add("coocked " + TxtQuantity.Text + " chickens");
+                        LbLog.Items.Add("coocked " + TxtQuantity.Text + " chickens");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred: " + ex.Message);
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("you have not chosen.\nplease choose ");
                 }
-            }
-            else if(RbChicken.IsChecked == false && RbEgg.IsChecked == false)
-            {
-                MessageBox.Show("you have not chosen.\nplease choose ");
             }
             else
             {
