@@ -24,5 +24,10 @@ namespace Restaurant
         {
             InitializeComponent();
         }
+
+        private void Submit(object sender, RoutedEventArgs e)
+        {
+            //button clicked
+        }
     }
 }

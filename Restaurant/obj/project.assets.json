@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\RiderProjects\\Restaurant\\Restaurant\\Restaurant.csproj",
+      "projectUniqueName": "C:\\Users\\user\\RiderProjects\\hello-world\\Restaurant\\Restaurant.csproj",
       "projectName": "Restaurant",
-      "projectPath": "C:\\Users\\Admin\\RiderProjects\\Restaurant\\Restaurant\\Restaurant.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\RiderProjects\\Restaurant\\Restaurant\\obj\\",
+      "projectPath": "C:\\Users\\user\\RiderProjects\\hello-world\\Restaurant\\Restaurant.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\RiderProjects\\hello-world\\Restaurant\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
@@ -62,7 +62,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
