@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rs+LdcmT6USZGknCY1N7W9lEOoz/i/nYrVMLvzdloxa0zPyI6FlkDBWBrOW+fVVc/mtfaVI0YkGU8lelj2KtSQ==",
+  "dgSpecHash": "Ni64t6Gu1FANV0aE7aTGvfxnyclx2KhATfe8u4VAH0wgifIgqkAl9s3vtQS5L9TUU/+eParhshngZfneYToNPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\RiderProjects\\hello-world\\Restaurant\\Restaurant.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\RiderProjects\\Restaurant\\Restaurant\\Restaurant.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

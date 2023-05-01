@@ -28,6 +28,39 @@ namespace Restaurant
         private void Submit(object sender, RoutedEventArgs e)
         {
             //button clicked
-        }
+            if (RbChicken.IsChecked == true && !string.IsNullOrEmpty(TxtQuantity.Text))
+            {
+                try
+                {
+                    LbLog.Items.Add("Cooked Chicken " + Convert.ToInt32(TxtQuantity.Text));
+                    TxtQuantity.Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                    TxtQuantity.Clear();
+                }
+            }
+            else if (RbEgg.IsChecked == true && !string.IsNullOrEmpty(TxtQuantity.Text))
+            {
+                try
+                {
+                    LbLog.Items.Add("Cooked Egg " + Convert.ToInt32(TxtQuantity.Text));
+                    TxtQuantity.Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            else if(RbChicken.IsChecked == false && RbEgg.IsChecked == false)
+            {
+                MessageBox.Show("you have not chosen.\nplease choose ");
+            }
+            else
+            {
+                MessageBox.Show("Write count of meal!");
+            }
+    }
     }
 }
