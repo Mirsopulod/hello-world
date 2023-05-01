@@ -25,6 +25,8 @@
                 <Label Grid.Row="0" Grid.Column="1">Quantity</Label>
                 <TextBox Grid.Row="1" Grid.Column="1" Name="TxtQuantity"></TextBox>
                 
+                <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Click="Submit">Submit</Button>
+                <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Click="Submit" Background="#FF7F00">Submit</Button> 
                 <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Click="Submit">
                         <Button.Background>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">

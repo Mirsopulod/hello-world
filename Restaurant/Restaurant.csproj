@@ -7,4 +7,29 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Content Include="bin\Debug\net6.0-windows\Restaurant.deps.json" />
+      <Content Include="bin\Debug\net6.0-windows\Restaurant.dll" />
+      <Content Include="bin\Debug\net6.0-windows\Restaurant.exe" />
+      <Content Include="bin\Debug\net6.0-windows\Restaurant.pdb" />
+      <Content Include="bin\Debug\net6.0-windows\Restaurant.runtimeconfig.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="bin\**" />
+      <Compile Remove="1.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="bin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="bin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Remove="bin\**" />
+    </ItemGroup>
+
 </Project>

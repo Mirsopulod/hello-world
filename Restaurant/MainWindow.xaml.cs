@@ -13,8 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Restaurant
-{
+namespace Restaurant{
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -32,7 +32,16 @@ namespace Restaurant
             {
                 try
                 {
-                    LbLog.Items.Add("Cooked Chicken " + Convert.ToInt32(TxtQuantity.Text));
+                    List<Egg> eggs=new List<Egg>();
+                    for(int i =0;i<Convert.ToInt32(TxtQuantity.Text);i++){
+                        eggs.Add(new Egg());
+                    }
+
+                    foreach(Egg tre in eggs){
+                        tre.Cook();
+                    }
+
+                    LbLog.Items.Add("coocked " + TxtQuantity.Text + " eggs");
                 }
                 catch (Exception ex)
                 {
@@ -43,7 +52,16 @@ namespace Restaurant
             {
                 try
                 {
-                    LbLog.Items.Add("Cooked Egg " + Convert.ToInt32(TxtQuantity.Text));
+                    List<Chicken> chickens=new List<Chicken>();
+                    for(int i =0;i<Convert.ToInt32(TxtQuantity.Text);i++){
+                        chickens.Add(new Chicken());
+                    }
+
+                    foreach(Chicken tre in chickens){
+                        tre.Cook();
+                    }
+
+                    LbLog.Items.Add("coocked " + TxtQuantity.Text + " chickens");
                 }
                 catch (Exception ex)
                 {
