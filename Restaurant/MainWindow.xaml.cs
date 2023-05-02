@@ -38,11 +38,11 @@ namespace Restaurant{
                         for (int i = 0; i < Convert.ToInt32(TxtQuantity.Text); i++)
                         {
                             eggs.Add(new Egg());
-                        }
-
-                        foreach (Egg tre in eggs)
-                        {
-                            tre.Cook();
+                            while (eggs[i].Crack()<30)
+                            {
+                                eggs[i].Crack();
+                            }
+                            eggs[i].Cook();
                         }
 
                         LbLog.Items.Add("coocked " + TxtQuantity.Text + " eggs");
@@ -60,11 +60,8 @@ namespace Restaurant{
                         for (int i = 0; i < Convert.ToInt32(TxtQuantity.Text); i++)
                         {
                             chickens.Add(new Chicken());
-                        }
-
-                        foreach (Chicken tre in chickens)
-                        {
-                            tre.Cook();
+                            chickens[i].CutUp();
+                            chickens[i].Cook();
                         }
 
                         LbLog.Items.Add("coocked " + TxtQuantity.Text + " chickens");
